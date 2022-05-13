@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    
+    <!--Responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--OWL CSS-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
+    <title>NewsFlix</title>
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <div class="container">
+            <h2 class="logo">NewsFlix</h2>
+            <nav>  <!-- Tag semântica que usa para criar menus de navegação -->
+                <a href="#Inicio">Início</a>
+                <a href="#Series">Séries</a>                
+                <a href="#Filmes">Filmes</a>
+                <a href="#my-list">Minha Lista</a>
+            </nav>
+        </div>
+    </header>
+    <section id="Inicio">
+        <main>
+            <div class="filme_principal">
+                <div class="container">
+                    <h3 class="titulo">Dr Estranho no Multiverso da Loucura</h3>
+                    <p class="descricao">Doutor Estranho, com a ajuda de aliados místicos antigos e novos, atravessa as perigosas realidades alternativas e alucinantes do Multiverso para enfrentar um novo adversário misterioso.</p>
+                    <div class="botoes">
+                       <a href="//www.youtube.com/embed/idU-bx2x1a8?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank"> 
+                           <button role="button" class="botao">
+                               <i class="fa-solid fa-play"></i>
+                               Assistir
+                           </button>
+                       </a>
+                       <a href="https://www.themoviedb.org/movie/284052-doctor-strange?language=pt-BR" target="_blank">
+                           <button role="button" class="botao">
+                              <i class="fa-solid fa-circle-info"></i>
+                               Mais Informações
+                           </button>
+                       </a>    
+                    </div>
+                </div>    
+            </div>
+        </main>
+    </section>
+    <section id="my-list"></section>
+    <section id="Filmes">
+        <h1>Filmes Populares</h1>
+        <div class="carrosel_filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box_filme" src="img/mini1.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a id="filme_1" href="//www.youtube.com/embed/bWXt_MPmGcU?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao" onclick="adicionar_lista('img/mini1.jpg',document.getElementById('filme_1'))">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/338953-fantastic-beasts-the-secrets-of-dumbledore?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini2.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/K7wqvsj4iM8?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/675353-sonic-the-hedgehog-2?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini3.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/r5D_XnTzOoQ?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/526896-morbius?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini4.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/waTob1IM4UM?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/616037-thor-love-and-thunder?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini5.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/RbENk4FP0C8?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/438148-minions-the-rise-of-gru?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini6.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/idU-bx2x1a8?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/284052-doctor-strange?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini7.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/gqv_7VEyBYY?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/648579-the-unbearable-weight-of-massive-talent/videos?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini8.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/Fgvp9xN5c68?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/809140-father-stu?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini9.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/-cmwzbZ072U?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/76600-avatar-the-way-of-water?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini10.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/5c02t5_owFQ?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/movie/639933-the-northman?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section id="Series">
+        <h1>Séries Populares</h1>
+        <div class="carrosel_filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box_filme" src="img/mini11.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/rz2WBg5g7Ek?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/92749-moon-knight?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini12.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/tpv6uIAlXaw?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/52814-halo?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini13.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/pDBatKGEtWM?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/63174-lucifer?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini14.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/_euwFRjIYwU?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/92782-ms-marvel?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini15.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/nHMQBg6Zduc?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/116135-vikings-valhalla?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini16.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/b3v9DXCP1UQ?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/85271-wandavision?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini17.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/ETpixAlp3bk?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/84958-loki?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini18.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/1bXuJn77Cfc?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/93405?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini19.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/6tdxk503c7U?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/88329-hawkeye?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="box_filme" src="img/mini20.jpg" alt="" srcset="">
+                    <div class="lista_botoes">
+                        <a href="//www.youtube.com/embed/6XGnv7Zgbeg?autoplay=1&origin=https%3A%2F%2Fwww.themoviedb.org&hl=pt&modestbranding=1&fs=1&autohide=1" target="_blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        </a>
+                        <button role="button" class="botao">
+                            <i title="Adicionar à Minha Lista" class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="https://www.themoviedb.org/tv/85552-euphoria?language=pt-BR" target="_blank">
+                        <button role="button" class="botao">
+                            <i title="Mais Informações" class="fa-solid fa-circle-info"></i>
+                        </button>         
+                        </a>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!--JavaScript sempre colocar no final após carregar a página-->
+    <script src="https://kit.fontawesome.com/dcab405112.js" crossorigin="anonymous"></script> <!--Link externo para ícones a utilizar nos botões-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>

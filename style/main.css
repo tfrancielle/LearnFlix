@@ -1,0 +1,136 @@
+:root{ /* Declaração de variaveis */ 
+    --vermelho:#e50914;
+    --preta:#141414;
+    --capa: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/Capa_DrEstranho.jpg');
+}
+
+* { /* Reset CSS */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Elementos base */
+body {
+    background:var(--preta);
+    font-family:'Arial', Times, serif;
+    color:white;
+}
+
+header .container {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between; /* Organiza a posição do Menu */
+}
+
+header .logo {
+    margin-left:5px;
+    color:var(--vermelho);
+    font-family:'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:#AAA;
+    margin-right:10px;
+}
+
+header nav a:hover{ /* quando clicar no menu muda a cor da fonte */
+    color:#fff;
+}
+
+h1{
+    margin: 5px;
+    font-size: 17px;
+}
+/* Filme princiapl */
+.filme_principal {
+    font-size: 16px;
+    background:var(--capa);
+    
+    height:500px;
+    background-size: cover; /* Imagem pegar a area de cobertura da caixa */
+    
+    display:flex; /* Jogos nos elementos para o padrão em linha */
+    flex-direction:column;
+    justify-content:center;
+    align-items: flex-start;
+
+}
+
+.filme_principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme_principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px; /* Espaço entre os botões */
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover { /* Mudar cor ao passar pelo botão */
+    background-color: rgba(255, 255, 255, 0.348);
+    padding: 20px 20px;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.botoes a {
+    text-decoration: none;   
+}
+
+.lista_botoes {
+    width: 244px;
+    padding: 4px;
+    border: 2px solid black;
+    margin: 0;
+    background-color: black;
+}
+
+.lista_botoes .botao{
+    margin: 19px;
+    padding: 10px;
+    height: 40px;
+    width: 30px;
+    border-radius: 60px;
+}
+
+.lista_botoes a {
+    text-decoration: none;   
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme_principal .container {
+    width: 70%;
+}
+
+.box_filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel_filme {
+    margin-top: 5px;
+}
